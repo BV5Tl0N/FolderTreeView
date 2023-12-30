@@ -1,0 +1,51 @@
+/* Folder Tree View version 1.0 */
+/* Get the latest from https://github.com/BV5Tl0N/foldertreeview */
+
+:root {
+    --color-metallicsilver: #a7acb1;
+    --color-washedblack: #212529;
+}
+
+ul, #tree-view {
+    list-style-type: none;
+    word-wrap: unset
+}
+
+#tree-view {
+    margin: 0;
+    padding: 0;
+}
+
+    #tree-view ul, #tree-view li, #tree-view span {
+        user-select: none;
+    }
+
+.toggler::after {
+    content: "\25BC";
+    display: inline-block;
+    margin-left: 0.6em !important;
+    margin-top: 0.6em !important;
+    color: var(--color-metallicsilver) !important;
+}
+
+.toggler:hover::after {
+    color: var(--color-washedblack) !important;
+}
+
+.toggler-down::after {
+    content: "\25B2";
+}
+
+.toggler-collapsible {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.tree-view-icon {
+    font-size: x-large !important;
+    top: 0.25em !important;
+    position: relative;
+}
